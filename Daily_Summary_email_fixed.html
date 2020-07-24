@@ -1,0 +1,782 @@
+<!-- FOR MONDAY
+make non 0 numbers bold and a color
+make boxes have bigger numbers and smaller words and space between number and word bigger
+-->
+
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/07ec9515fd.js"></script>
+
+</head>
+
+
+<body style="width: 100%; max-width:650; font-family: 'Open Sans', Arial, Helvetica, sans-serif; color: #333; letter-spacing: 0.3px;">
+    <!-- HEADER - Change title and date -->
+    <table style="border-collapse: separate; width: 100%; margin: 15px 0; border-spacing: 0px;">
+        <tr><td><table style="width: 100%; border-spacing: 0px;">
+          <tr>
+            <td>
+              <h1 style="font-size: 15px; font-weight: 800; margin: 0 0 2px 0; padding: 0; color: #008AD7;">RosterServer Daily Summary</h1>
+              <p style="font-size: 13px; margin: 0; padding: 0;">Wed, May 8, 2019</p>
+            </td>
+            <td style="text-align: right;">
+              <img src="https://cdn.classlink.com/production/public/cl_logo_50.png" alt="ClassLink Logo">
+            </td>
+          </tr>
+        </table></td></tr>
+    </table>
+    
+    
+    <table style="width: 100%; border-collapse: separate; border-spacing: 0; background-color: #fcfcfc; border: 1px solid #dddddd; border-radius: 5px; padding: 25px 25px 25px 25px; margin-right: 0;">
+            <tr width="100%"><td><h2 style="font-size: 15px; font-weight: 800; margin: 0 0 0 0; padding-bottom: 25px;">Overview</h2></td></tr>
+            <tr style="font-size: 15px; border-spacing: 0;" width="100%">
+                       
+                      
+                            <td width="25%" style="padding: 0 5px 0 5px; margin: 0 30px 0 0;">
+                                <p style="font-size: 13px; font-weight: 800; margin: 0 0 5px 0"><i class="far fa-file-import" style="font-size:14px"></i><span style="margin-left: 10px">Imports</span></p>
+                                <p style="color:#03A52D; font-size: 13px; font-weight: 600; margin: 0 0 0 25px">5 Successes</p>
+                                <p style="color:#DA3939; font-size: 13px; font-weight: 600; margin: 0 0 0 25px">5 Fails</p>
+                            </td>
+                            <td width="25%" style="padding: 0 5px 0 5px;">
+                                <p style="font-size: 13px; font-weight: 800; margin: 0 0 5px 0"><i class="far fa-file-export" style="font-size:14px"></i><span style="margin-left: 10px">Exports</span></p>
+                                <p style="color:#03A52D; font-size: 13px; font-weight: 600; margin: 0 0 0 25">5 Successes</p>
+                                <p style="color:#DA3939; font-size: 13px; font-weight: 600; margin: 0 0 0 25">5 Fails</p>
+                            </td>
+                            <td width="25%" style="padding: 0 5px 0 5px; vertical-align: top">
+                                <p style="font-size: 13px; font-weight: 800; margin: 0 0 5px 0"><i class="far fa-times" style="font-size:14px"></i><span style="margin-left: 10px">Vendor Not <span style="margin-left: 20px">Received</span></span></p>
+                                <p style="color:#333; font-size: 13px; font-weight: 600; margin: 0 0 0 20px; line-height: 90%">5 Applications</p>
+                            </td>
+                            <td width="25%" style="padding: 0 5px 0 5px; vertical-align: top">
+                                <p style="font-size: 13px; font-weight: 800; margin: 0 0 5px 0"><i class="far fa-ban" style="font-size:14px"></i><span style="margin-left: 10px">Disabled Apps</span></p>
+                                <p style="color:#333; font-size: 13px; font-weight: 600; margin: 0 0 0 25; line-height: 90%">5 Applications</p>
+                            </td>
+            </tr>  
+
+            <tr style="border-collapse: separate; border-spacing: 0px; table-layout: fixed; background-color: #fcfcfc;">
+                <td colspan="4" style="padding-top: 20px">
+                    <table style = "border-spacing: 15px" width = "100%">
+                        <tr>
+
+                        <td style="background-color: #fff; border: 1px solid #e6e6e6; border-radius: 5px; text-align: center; height: 75px; padding: 0px" width="25%">
+                            
+                            <!--smaller bottom margin because two lines--> 
+                                <h2 style="font-size: 13px; font-weight: 500; line-height: 100%; margin: 0px 0 2px 0">
+                                    Academic<br>Sessions
+                                </h2>
+                                <h2 style="font-size: 16px; font-weight:600; margin: 0">
+                                    23
+                                </h2>
+                            
+                        </td>
+
+                        <td style="background-color: #fff; border: 1px solid #e6e6e6; border-radius: 5px; text-align: center; height: 75px;" width="25%">
+                            
+                                <h2 style="font-size: 13px; font-weight: 500; margin: 0px 0 7px 0">
+                                    Orgs
+                                </h2>
+                                <h2 style="font-size: 16px; font-weight: 600; margin: 0; ">
+                                    364
+                                </h2>
+                        </td>
+
+                        <td style="background-color: #fff; border: 1px solid #e6e6e6; border-radius: 5px; text-align: center; height: 75px;" width="25%">
+                            
+                            
+                                <h2 style="font-size: 13px; font-weight: 500; margin: 0px 0 7px 0">
+                                    Courses
+                                </h2>
+                                <h2 style="font-size: 16px; font-weight: 600; margin: 0;">
+                                213
+                                </h2>                               
+                        </td>
+
+                        <td style="background-color: #fff; border: 1px solid #e6e6e6; border-radius: 5px; text-align: center; height: 75px;" width="25%">
+                                <h2 style="font-size: 13px; font-weight: 500; margin: 0px 0 7px 0">
+                                    Classes
+                                </h2>
+                                <h2 style="font-size: 16px; font-weight: 600; margin: 0;">
+                                231
+                                </h2>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="background-color: #fff; border: 1px solid #e6e6e6; border-radius: 5px; text-align: center; height: 75px;" width="25%">
+                            
+                            
+                                <h2 style="font-size: 13px; font-weight: 500; margin: 0px 0 7px 0">
+                                    Enrollments
+                                </h2>
+                                <h2 style="font-size: 16px; font-weight: 600; margin: 0;">
+                                4,911
+                                </h2>
+                            
+                        </td>
+
+                        <td style="background-color: #fff; border: 1px solid #e6e6e6; border-radius: 5px; text-align: center; height: 75px;" width="25%">
+                            
+                            
+                                <h2 style="font-size: 13px; font-weight: 500; margin: 0px 0 7px 0">
+                                    Users
+                                </h2>
+                                <h2 style="font-size: 16px; font-weight: 600; margin: 0;">
+                                76
+                                </h2>
+                            
+                        </td>
+
+                        <td style="background-color: #fff; border: 1px solid #e6e6e6; border-radius: 5px; text-align: center; height: 75px;" width="25%">
+                            
+                                <h2 style="font-size: 13px; font-weight: 500; margin: 0px 0 7px 0">
+                                    Demographics
+                                </h2>
+                                <h2 style="font-size: 16px; font-weight: 600; margin: 0;">
+                                567
+                                </h2>
+                            
+                        </td>
+
+                        <td style="background-color: #fff; border: 1px solid #e6e6e6; border-radius: 5px; text-align: center; height: 75px;" width="25%">
+                            
+                            
+                                <h2 style="font-size: 13px; font-weight: 500; margin: 0px 0 7px 0">
+                                    Applications
+                                </h2>
+                                <h2 style="font-size: 16px; font-weight: 600; margin: 0;">
+                                8
+                                </h2>
+                           
+                        </td>
+                    </table>
+                </td>
+            </tr> 
+        </table>
+        
+   
+    
+        <table style="border-collapse: separate; border-spacing: 0; background-color: #fcfcfc; border: 1px solid #dddddd; border-radius: 5px; padding-top: 25px; margin-top: 25px; width: 100%">
+            <tr><td><h2 style="font-size: 15px; font-weight: 800; margin: 0 0 0 0; padding-left: 25; padding-bottom: 25px;">Imports</h2></td></tr>
+            <tr style="border-spacing: 0;">
+                <td style="border-spacing: 0; padding: 0">
+                    
+                    <table style="background-color: #f4f4f4; width:648px; font-size: 15px; border-spacing: 0; padding: 15px 25px">
+                        <tr style="padding-left: 25px">
+                            <td width="34px">
+                                <div style="background-color: #fff; border-radius: 5px; text-align: center; height: 34px; left: 63px; width: 34px"> 
+                                    <h2 style="font-size: 15; color: #008AD7; text-align: center; padding-top: 5px">1</h2>    
+                                </div>
+                            </td>
+                            <td style="font-weight: 600; font-size: 12px; text-align: left; padding-left: 30px;" width="80px">
+                                <p style="font-weight: 600; font-size: 12px; margin: 0">Status</p>
+                                <p style="font-weight: 600; font-size: 12px; margin:0">Data Version</p>
+                                 
+                            </td>
+                            <td style="padding-left: 45px">
+                                <p style="font-weight: 800; font-size: 12px; margin: 0">Complete <span style="font-weight: 500; margin-left: 5px">5/7/2019 11:20:23 AM</span></p>
+                                <p style="font-weight: 800; font-size: 12px; margin: 0">v1p1</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td width = "100%">
+                    <table style="padding-top: 20px; padding-left: 25px">
+                    <tr>
+                        <td width="150px">
+                        <p style="font-size: 14; font-weight: 600">File</p>
+                        </td>
+                        <td width="120px">
+                        <p style="font-size: 14; font-weight: 600">Errors</p>
+                        </td>
+                        <td width="100px">
+                        <p style="font-size: 14; font-weight: 600">Rows</p>
+                        </td>
+                        <td width="80px">
+                            <i class="far fa-plus" style="font-size:14px; color: #03A52D"></i>
+                        </td>
+                        <td width="80px">
+                            <i class="far fa-minus" style="font-size:14px; color: #DA3939"></i>
+                        </td>
+                         <td width="80px">
+                            <i class="far fa-triangle" style="font-size:14px; color: #F99A24"></i>
+                        </td>
+                    </tr>
+                    </table>
+                </td>
+            </tr>    
+                    
+                    <!-- GOOD LINE -->
+                    
+            <tr>
+                <td colspan="3">
+                    <hr color="#eeeeee" size="1px" style="margin: 20px 0px">
+                </td>
+            </tr>
+            <tr>
+            <td>
+                <table width="100%" style="padding: 0px 25px 20px 25px; border-spacing: 0px">
+                   
+                    <tr style="line-height: 150%">
+                        <td width="150px" style="border-spacing: 0px; border-collapse: collapse; padding: 0px;">
+                            <p style="font-size: 12; font-weight: 800; margin: 0">academicSessions</p>
+                        
+                        </td>
+                        <td width="120px" style="border-spacing: 0px; border-collapse: collapse; padding: 0px;">
+                            <p style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                        
+                        </td>
+                        <td width="100px" style="border-spacing: 0px; border-collapse: collapse; padding: 0px;">
+                           <p style="font-size: 12;font-weight: 600; margin: 0">0</p> 
+                        </td>
+                        <td width="80px" style="border-spacing: 0px; border-collapse: collapse; padding: 0px;">
+                            <p style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                        </td>
+                         <td width="80px" style="border-spacing: 0px; border-collapse: collapse; padding: 0px;">
+                            <p style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                        </td>
+                         <td style="border-spacing: 0px; border-collapse: collapse; padding: 0px;">
+                            <p style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                        </td>
+                    </tr>
+                </td>    
+            </tr>
+                            
+                    <tr style="line-height: 150%">
+                        <td>
+                            <p width="30px" style="font-size: 12; font-weight: 800; margin: 0">orgs</p>
+                        
+                        </td>
+                        <td>
+                            <p width="120px" style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                        
+                        </td>
+                        <td>
+                           <p width="100px" style="font-size: 12;font-weight: 600; margin: 0">0</p> 
+                        </td>
+                        <td>
+                            <p width="80px" style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                        </td>
+                         <td>
+                            <p width="80px" style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                        </td>
+                         <td>
+                            <p style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                        </td>
+                    </tr>
+                            
+                    <tr style="line-height: 150%">
+                        <td>
+                            <p width="30px" style="font-size: 12; font-weight: 800; margin: 0">courses</p>
+                        
+                        </td>
+                        <td>
+                            <p width="120px" style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                        
+                        </td>
+                        <td>
+                           <p width="100px" style="font-size: 12;font-weight: 600; margin: 0">0</p> 
+                        </td>
+                        <td>
+                            <p width="80px" style="font-size: 12;font-weight: 600; margin: 0"> 0</p>
+                        </td>
+                         <td>
+                            <p width="80px" style="font-size: 12;font-weight: 600; margin: 0"> 0</p>
+                        </td>
+                         <td>
+                            <p style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                        </td>
+                    </tr>
+                            
+                    <tr style="line-height: 150%">
+                        <td>
+                            <p width="30px" style="font-size: 12; font-weight: 800; margin: 0">classes</p>
+                        
+                        </td>
+                        <td>
+                            <p width="120px" style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                        
+                        </td>
+                        <td>
+                           <p width="100px" style="font-size: 12;font-weight: 600; margin: 0">0</p> 
+                        </td>
+                        <td>
+                            <p width="80px" style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                        </td>
+                         <td>
+                            <p width="80px" style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                        </td>
+                         <td>
+                            <p style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                        </td>
+                    </tr>
+                            
+                    <tr style="line-height: 150%">
+                        <td style="border-spacing: 0">
+                            <p width="30px" style="font-size: 12; font-weight: 800; margin: 0">users</p>
+                        
+                        </td>
+                        <td style="border-spacing: 0">
+                            <p width="120px" style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                        
+                        </td>
+                        <td>
+                           <p width="100px" style="font-size: 12;font-weight: 600; margin: 0">0</p> 
+                        </td>
+                        <td>
+                            <p width="80px" style="font-size: 12;color: #03A52D; font-weight: 800; margin: 0">17</p>
+                        </td>
+                         <td>
+                            <p width="80px" style="font-size: 12; color: #DA3939; font-weight: 800; margin: 0">17</p>
+                        </td>
+                         <td>
+                            <p style="font-size: 12; color: #F99A24; font-weight: 800; margin: 0">17</p>
+                        </td>
+                    </tr>
+                    <tr style="line-height: 150%">
+                        <td>
+                            <p width="30px" style="font-size: 12; font-weight: 800; margin: 0">enrollments</p>
+                        
+                        </td>
+                        <td>
+                            <p width="120px" style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                        
+                        </td>
+                        <td>
+                           <p width="100px" style="font-size: 12;font-weight: 600; margin: 0">0</p> 
+                        </td>
+                        <td>
+                            <p width="80px" style="font-size: 12;color: #03A52D; font-weight: 800; margin: 0">30</p>
+                        </td>
+                         <td>
+                            <p width="80px" style="font-size: 12; color: #DA3939; font-weight: 800; margin: 0">30</p>
+                        </td>
+                         <td>
+                            <p style="font-size: 12; color: #F99A24; font-weight: 800; margin: 0">13</p>
+                        </td>
+                    </tr>
+                </table> 
+            </td> 
+        </tr>
+    
+        
+
+            <tr style="border-spacing: 0;">
+                <td style="padding: 0">
+                    <table style="border-collapse: separate; background-color: #f4f4f4; width:648px; font-size: 15px; border-spacing: 0; padding: 15px 25px">
+                        <tr style="padding-left: 25px">
+                            <td width="34px">
+                                <div style="background-color: #fff; border-radius: 5px; text-align: center; height: 34px; left: 63px; width: 34px"> 
+                                    <h2 style="font-size: 15; color: #008AD7; text-align: center; padding-top: 5px">2</h2>    
+                                </div>
+                            </td>
+                            <td style="font-weight: 600; font-size: 12px; text-align: left; padding-left: 30px;" width="80px">
+                                <p style="font-weight: 600; font-size: 12px; margin: 0">Status</p>
+                                <p style="font-weight: 600; font-size: 12px; margin: 0">Data Version</p>
+                                 
+                            </td>
+                            <td style="padding-left: 45px">
+                                <p style="font-weight: 800; font-size: 12px; margin: 0; color: #DA3939">Threshold exceeded<span style="font-weight: 500; margin-left: 5px; color: #333">5/7/2019 11:20:23 AM</span></p>
+                                <p style="font-weight: 800; font-size: 12px; margin: 0">v1p1</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td width = 100%">
+                    <table style="padding-top: 20px; padding-left: 25px">
+                        <tr>
+                        <td width="150px">
+                            <p style="font-size: 14; font-weight: 600">File</p>
+                        </td>
+                        <td width="120px">
+                            <p style="font-size: 14; font-weight: 600">Errors</p>
+                        </td>
+                        <td width="100px">
+                            <p style="font-size: 14; font-weight: 600">Rows</p>
+                        </td>
+                        <td width="80px">
+                            <i class="far fa-plus" style="font-size:14px; color: #03A52D"></i>
+                        </td>
+                        <td width="80px">
+                            <i class="far fa-minus" style="font-size:14px; color: #DA3939"></i>
+                        </td>
+                         <td width="80px">
+                            <i class="far fa-triangle" style="font-size:14px; color: #F99A24"></i>
+                        </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td colspan="3" style="color: lawngreen">
+                    <hr color="#eeeeee" size="1px" style="margin: 20px 0px">
+                </td>
+            </tr>
+                      
+                    
+                        
+                        
+            <tr>
+                <td>
+                    <table width = "100%" style = "border-collapse: separate; padding: 0 25px 20px 25px; border-spacing: 0px">    
+                        <tr style="line-height: 150%">
+                            <td width="150px">
+                                <p style="font-size: 12; font-weight: 800; margin: 0">academicSessions</p>
+                            </td>
+                            <td width="120px">
+                                <p style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                            </td>
+                            <td width="100px" >
+                                <p style="font-size: 12;font-weight: 600; margin: 0">0</p> 
+                            </td>
+                            <td width="80px" >
+                                <p style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                            </td>
+                            <td width="80px" >
+                                <p style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                            </td>
+                            <td>
+                                <p style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                            </td>
+                        </tr>
+                            
+                        <tr style="line-height: 150%">
+                            <td>
+                                <p width="30px" style="font-size: 12; font-weight: 800; margin: 0">orgs</p>
+                            </td>
+                            <td>
+                                <p width="120px" style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                            </td>
+                            <td>
+                                <p width="100px" style="font-size: 12;font-weight: 600; margin: 0">0</p> 
+                            </td>
+                            <td>
+                                <p width="80px" style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                            </td>
+                            <td>
+                                <p width="80px" style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                            </td>
+                            <td>
+                                <p style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                            </td>
+                        </tr>
+                            
+                        <tr style="line-height: 150%">
+                            <td>
+                                <p width="30px" style="font-size: 12; font-weight: 800; margin: 0">courses</p>
+                            </td>
+                            <td>
+                                <p width="120px" style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                            </td>
+                            <td>
+                                <p width="100px" style="font-size: 12;font-weight: 600; margin: 0">0</p> 
+                            </td>
+                            <td>
+                                <p width="80px" style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                            </td>
+                            <td>
+                                <p width="80px" style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                            </td>
+                            <td>
+                                <p style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                            </td>
+                        </tr>
+                            
+                        <tr style="line-height: 150%">
+                            <td >
+                                <p width="30px" style="font-size: 12; font-weight: 800; margin: 0">classes</p>
+                            
+                            </td>
+                            <td >
+                                <p width="120px" style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                            
+                            </td>
+                            <td>
+                            <p width="100px" style="font-size: 12;font-weight: 600; margin: 0">0</p> 
+                            </td>
+                            <td>
+                                <p width="80px" style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                            </td>
+                            <td>
+                                <p width="80px" style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                            </td>
+                            <td>
+                                <p style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                            </td>
+                        </tr>
+                            
+                        <tr style="background-color: rgba(218, 57, 57, 0.08); line-height: 150%;" cellspacing="0px">
+                            <td style="border-collapse: separate; border-spacing: 0px; border-collapse: collapse; border-radius: 4px 0 0 4px">
+                                <p width="30px" style="font-size: 12; font-weight: 800; margin: 0; color: #DA3939">users</p>
+                            </td>
+                            <td style="border-spacing: 0px; border-collapse: collapse; ">
+                                <p width="120px" style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                            
+                            </td>
+                            <td style="border-spacing: 0px; border-collapse: collapse;">
+                            <p width="100px" style="font-size: 12;font-weight: 600; margin: 0">0</p> 
+                            </td>
+                            <td style="border-spacing: 0px; border-collapse: collapse;">
+                                <p width="80px" style="font-size: 12;color: #03A52D; font-weight: 800; margin: 0">17</p>
+                            </td>
+                            <td style="border-spacing: 0px; border-collapse: collapse;">
+                                <p width="80px" style="font-size: 12; color: #DA3939; font-weight: 800; margin: 0">17</p>
+                            </td>
+                            <td style="border-spacing: 0px; border-collapse: collapse; border-radius: 0px 4px 4px 0px">
+                                <p style="font-size: 12; color: #F99A24; font-weight: 800; margin: 0">17</p>
+                            </td>
+                        </tr>
+
+                        <tr style="line-height: 150%">
+                            <td >
+                                <p width="30px" style="font-size: 12; font-weight: 800; margin: 0">enrollments</p>
+                            
+                            </td>
+                            <td >
+                                <p width="120px" style="font-size: 12;font-weight: 600; margin: 0">0</p>
+                            
+                            </td>
+                            <td>
+                            <p width="100px" style="font-size: 12;font-weight: 600; margin: 0">0</p> 
+                            </td>
+                            <td>
+                                <p width="80px" style="font-size: 12;color: #03A52D; font-weight: 800; margin: 0">30</p>
+                            </td>
+                            <td>
+                                <p width="80px" style="font-size: 12; color: #DA3939; font-weight: 800; margin: 0">30</p>
+                            </td>
+                            <td>
+                                <p style="font-size: 12; color: #F99A24; font-weight: 800; margin: 0">13</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>       
+        </table>
+
+        
+   
+    
+        <table style="border-collapse: separate; border-spacing: 0; background-color: #fcfcfc; border: 1px solid #dddddd; border-radius: 5px; padding: 25px 0 20 0; margin-top: 25px; width: 100%">
+            <tr><td><h2 style="font-size: 15px; font-weight: 800; margin: 0 0 0 0; padding-left: 25; padding-bottom: 25px;">Exports</h2></td></tr>
+            <tr style="border-spacing: 0;">
+                <td style="border-spacing: 0; padding: 0">
+                    <table style="background-color: #f4f4f4; width: 100%; font-size: 15px; border-spacing: 0; padding: 15px 25px">
+                        <tr style="padding-left: 25px">
+                            <td width="34px">
+                                <div style="background-color: #fff; border-radius: 5px; text-align: center; height: 34px; left: 63px; width: 34px"> 
+                                    <h2 style="font-size: 15; color: #008AD7; text-align: center; padding-top: 5px">1</h2>    
+                                </div>
+                            </td>
+                            <td style="font-weight: 600; font-size: 12px; text-align: left; padding-left: 30px;" width="80px">
+                                <p style="font-weight: 600; font-size: 12px; margin: 0">Status</p>
+                                <p style="font-weight: 600; font-size: 12px; margin:0">Application</p>
+                                <p style="font-weight: 600; font-size: 12px; margin:0">Vendor</p>
+                                 
+                            </td>
+                            <td style="padding-left: 45px">
+                                <p style="font-weight: 800; font-size: 12px; margin: 0">Success <span style="font-weight: 500; margin-left: 5px">5/7/2019 11:20:23 AM</span></p>
+                                <p style="font-weight: 800; font-size: 12px; margin: 0">35</p>
+                                <p style="font-weight: 800; font-size: 12px; margin: 0">Pearson</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <table style="padding-top: 20px; padding-left: 25px">
+                        <tr>
+                            <td width="200px">
+                            <p style="font-size: 14; font-weight: 600">File</p>
+                            </td>
+                            <td width="100px">
+                            <p style="font-size: 14; font-weight: 600">Rows</p>
+                            </td>
+                        </tr>
+
+                        
+                        <tr>
+                            <td colspan="3" style="color: lawngreen;">
+                                <hr color="#eeeeee" size="1px" style="margin: 20px 0px">
+                            </td>
+                        </tr>
+                        
+                    <tr>
+                        <td>
+                        
+                            <table width="100%" style="padding: 0px  25px 0px 25px">
+                                <tr style="line-height: 150%">
+                                    <td width="200px">
+                                        <p style="font-size: 12; font-weight: 800; margin: 0">academicSessions.csv</p>
+                                    </td>
+                                    <td>
+                                        <p width="120px" style="font-size: 12;font-weight: 600; margin: 0">4563</p>
+                                    </td>
+                                </tr>
+                                <tr style="line-height: 150%">
+                                    <td width="200px">
+                                        <p style="font-size: 12; font-weight: 800; margin: 0">orgs.csv</p>
+                                    </td>
+                                    <td>
+                                        <p width="120px" style="font-size: 12;font-weight: 600; margin: 0">23</p>
+                                    </td>
+                                </tr>
+                                <tr style="line-height: 150%">
+                                    <td width="200px">
+                                        <p style="font-size: 12; font-weight: 800; margin: 0">courses.csv</p>
+                                    </td>
+                                    <td>
+                                        <p width="120px" style="font-size: 12;font-weight: 600; margin: 0">12,567</p>
+                                    </td>
+                                </tr>
+                                <tr style="line-height: 150%">
+                                    <td width="200px">
+                                        <p style="font-size: 12; font-weight: 800; margin: 0">classes.csv</p>
+                                    </td>
+                                    <td>
+                                        <p width="120px" style="font-size: 12;font-weight: 600; margin: 0">345</p>
+                                    </td>
+                                </tr>
+                                <tr style="line-height: 150%">
+                                    <td width="200px">
+                                        <p style="font-size: 12; font-weight: 800; margin: 0">users.csv</p>
+                                    </td>
+                                    <td>
+                                        <p width="120px" style="font-size: 12;font-weight: 600; margin: 0">444,576</p>
+                                    </td>
+                                </tr>
+                                <tr style="line-height: 150%">
+                                    <td width="200px">
+                                        <p style="font-size: 12; font-weight: 800; margin: 0">enrollments.csv</p>
+                                    </td>
+                                    <td>
+                                        <p width="120px" style="font-size: 12;font-weight: 600; margin: 0">35</p>
+                                    </td>
+                                </tr>
+                            </td>
+                      </table> 
+                    </td> 
+                </tr>
+            </table>
+        </tr>
+    </table>
+   
+    
+    <table style="border-collapse: separate; border-spacing: 0; background-color: #fcfcfc; border: 1px solid #dddddd; border-radius: 5px; padding: 25px 0 20 0; margin-top: 25px" width = 100%>
+        <tr><td><h2 style="font-size: 15px; font-weight: 800; margin: 0 0 0 0; padding-left: 25; padding-bottom: 25px;">Not Exported</h2></td></tr>
+        
+
+        <tr>
+            <td>
+                <table style="padding-left: 25px">
+                    <tr>
+                        <td width="150px">
+                        <p style="font-size: 14; font-weight: 600">App ID</p>
+                        </td>
+                        <td width="150px">
+                        <p style="font-size: 14; font-weight: 600">Vendor</p>
+                        </td>
+                        <td width="100px">
+                            <p style="font-size: 14; font-weight: 600">Last Export</p>
+                        </td>
+                    </tr>
+
+                    
+                    <tr style="padding: 0;">
+                        <table width="100%" style="padding: 0px;">
+                            <td height: 1px; style="padding: 0">
+                                <div style="height: 1px; background-color: #E6E6E6; width: 100%-10; margin: 5px 25px;">
+                    
+                                </div>
+                            </td>
+                        </table>
+                    </tr>
+                    
+                <tr>
+                    <td>
+                    
+                        <table width="100%" style="padding: 0px  25px 0px 25px">
+                            <tr style="line-height: 150%">
+                                <td width="150px">
+                                    <p style="font-size: 12; font-weight: 600; margin: 0">app id</p>
+                                </td>
+                                <td >
+                                    <p  style="font-size: 12;font-weight: 600; margin: 0">Pearson</p>
+                                </td>
+                                <td>
+                                    <p width="150px" style="font-size: 12;font-weight: 800; margin: 0">5/7/2019 <span style="font-weight: 500; margin-left: 5px; font-size: 12">(x days ago)</span></p>
+                                </td>
+                            </tr>
+                            <tr style="line-height: 150%">
+                                <td width="150px">
+                                    <p style="font-size: 12; font-weight: 600; margin: 0">app id</p>
+                                </td>
+                                <td width="150px">
+                                    <p style="font-size: 12;font-weight: 600; margin: 0">Pearson</p>
+                                </td>
+                                <td>
+                                    <p width="150px" style="font-size: 12;font-weight: 800; margin: 0">5/7/2019 <span style="font-weight: 500; margin-left: 5px; font-size: 12">(x days ago)</span></p>
+                                </td>
+                            </tr>
+                            
+                        </td>
+                  </table> 
+                </td> 
+            </tr>
+        </table>
+    </tr>
+</table>
+
+
+
+
+
+   
+       
+    
+   
+        <table style="border-collapse: separate; border-spacing: 0; background-color: #fcfcfc; border: 1px solid #dddddd; border-radius: 5px; padding-top: 25px; margin-top: 25px; width: 100%">
+            <tr>
+                <td>
+                    <h2 style="font-size: 15px; font-weight: 800; margin: 0 0 0 0; padding-left: 25; padding-bottom: 25px;">Server Info</h2>
+                </td>
+            </tr>
+            <tr>
+                <td style="font-weight: 600; font-size: 12px; text-align: left; padding: 0 0 0 25px;">
+                    <p style="font-weight: 600; font-size: 12px; margin:0">OneRoster Version</p>
+                    <p style="font-weight: 800; font-size: 12px; margin:0 0 15 0">DEV - 29612d384dac3938ebehda2928dhri29 - DEV</p>            
+                    <p style="font-weight: 600; font-size: 12px; margin:0">IP</p>
+                    <p style="font-weight: 800; font-size: 12px; margin:0 0 15 0">182.39.23.129</p>
+                    <p style="font-weight: 600; font-size: 12px; margin:0">Host</p>
+                    <p style="font-weight: 800; font-size: 12px; margin:0 0 15 0">ec2-52-23-123.us-east-2.compute.amazon.com</p>
+                    <p style="font-weight: 600; font-size: 12px; margin:0">Report Time</p>
+                    <p style="font-weight: 800; font-size: 12px; margin:0 0 15 0">5/7/2019 11:20:34 AM</p>
+                </td>
+            </tr>      
+        </table>
+   
+ <table style="margin-top: 35px; width: 100%; border-spacing: 0px;">
+        <tr><td style="text-align: center;">
+            <h4 style="padding: 0; margin: 0; font-size: 13px; font-weight: 700; color: #008AD7">
+                <img src="https://cdn.classlink.com/beta/framework/assets/images/copyright.png" style="vertical-align: middle;" alt="">
+                2019 ClassLink Inc.
+            </h4>
+        </td></tr>
+        <tr><td style="font-size: 13px; text-align: center;">
+            <a href="https://www.classlink.com" style="text-decoration: none; color: #008AD7">www.classlink.com</a>
+            <span style="color: #eeeeee; font-size: 16px;">|</span>
+            <span>+1 888 963 7550</span>
+        </td></tr>
+    </table>
+</body>
+    
+               
